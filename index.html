@@ -4,54 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../taller_laboratorio1/assets/style/estilo.css">
-    <title>Mundo de las Motos</title>
-  
+    <title>Motos CRF - Mundo de Aventura</title>
 </head>
 <body>
-    <header>
-        <h1>Motos CRF</h1>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Motos CRF</h1>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#intro">Inicio</a></li>
+                    <li><a href="#moto-info">Mi Moto Favorita</a></li>
+                    <li><a href="#consejos">Consejos para Motociclistas</a></li>
+                    <li><a href="#galeria">Galería de Motos</a></li>
+                    <li><a href="#footer">Contacto</a></li>
+                    <li><a href="#footer">Portafolio</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- Mueve el menú debajo del título -->
-    <div id="menu">
-        <ul>
-            <li><a href="#intro">Inicio</a></li>
-            <li><a href="#moto-info">Mi Moto Favorita</a></li>
-            <li><a href="#consejos">Consejos para Motociclistas</a></li>
-            <li><a href="#galeria">Galería de Motos</a></li>
-            <li><a href="#footer">Contacto</a></li>
-        </ul>
-    </div>
-    
-    <section id="intro">
-        <p>En el increíble mundo de las motos CRF, la emoción y la aventura se entrelazan en cada giro del camino. Desde las colinas escarpadas hasta los senderos polvorientos, estas máquinas emblemáticas desafían los límites de la exploración todoterreno.</p>
+    <section id="intro" class="section">
+        <div class="container">
+            <h2 class="section-title">Descubre el Mundo de las Motos CRF</h2>
+            <p>En el emocionante mundo de las motos CRF, la aventura nunca termina. Desde las colinas hasta los senderos, nuestras motos te llevarán a lugares que nunca imaginaste.</p>
+        </div>
     </section>
 
-    <section id="moto-info">
-        <h2>Mi Moto Favorita</h2>
-        <img src="../taller_laboratorio1/assets/img/img1.jpeg" alt="Imagen de una moto">
-        <p>Con su diseño robusto y su potencia inigualable, las CRF encarnan la pasión por la libertad y la adrenalina que solo los verdaderos aficionados comprenden. Cada rugido del motor es un llamado a la acción, una invitación a conquistar terrenos desconocidos y descubrir nuevos horizontes en el vasto universo de la aventura sobre dos ruedas</p>
+    <section id="moto-info" class="section">
+        <div class="container">
+            <h2 class="section-title">Mi Moto Favorita</h2>
+            <div class="moto-info">
+                <img src="../taller_laboratorio1/assets/img/img1.jpeg" alt="Mi Moto Favorita">
+                <p>Con su diseño robusto y su potencia inigualable, las CRF encarnan la pasión por la libertad y la adrenalina que solo los verdaderos aficionados comprenden. Cada rugido del motor es un llamado a la acción, una invitación a conquistar terrenos desconocidos y descubrir nuevos horizontes en el vasto universo de la aventura sobre dos ruedas.</p>
+            </div>
+        </div>
     </section>
 
-    <section id="consejos">
-        <h2>Consejos para Motociclistas</h2>
-        <ul>
-            <li>Mantenimiento regular: Realiza un mantenimiento regular de tu motocicleta CRF. Revisa el aceite, los frenos, la cadena y otros componentes importantes para garantizar un funcionamiento óptimo y seguro.</li>
-            <li>Equipo de protección: Siempre usa equipo de protección adecuado cuando montes en tu CRF. Esto incluye casco, guantes, botas, chaqueta y pantalones resistentes.</li>
-            <li>Conocimiento del terreno: Antes de aventurarte en terrenos desconocidos, asegúrate de tener un buen conocimiento del terreno y las condiciones. Algunos terrenos pueden ser más difíciles de manejar y requerirán habilidades específicas de conducción.</li>
-        </ul>
+    <section id="consejos" class="section">
+        <div class="container">
+            <h2 class="section-title">Consejos para Motociclistas</h2>
+            <ul class="consejos-lista">
+                <li>Mantenimiento regular: Realiza un mantenimiento regular de tu motocicleta CRF. Revisa el aceite, los frenos, la cadena y otros componentes importantes para garantizar un funcionamiento óptimo y seguro.</li>
+                <li>Equipo de protección: Siempre usa equipo de protección adecuado cuando montes en tu CRF. Esto incluye casco, guantes, botas, chaqueta y pantalones resistentes.</li>
+                <li>Conocimiento del terreno: Antes de aventurarte en terrenos desconocidos, asegúrate de tener un buen conocimiento del terreno y las condiciones. Algunos terrenos pueden ser más difíciles de manejar y requerirán habilidades específicas de conducción.</li>
+            </ul>
+        </div>
     </section>
 
-    <section id="galeria">
-        <h2>Galería de Motos</h2>
-        <!-- Agrega imágenes de diferentes motos -->
-        <img src="../taller_laboratorio1/assets/img/img2.jpg" alt="Moto 1">
-        <img src="../taller_laboratorio1/assets/img/img3.jpg" alt="Moto 2">
-        <img src="../taller_laboratorio1/assets/img/img4.jpg" alt="Moto 3">
+    <section id="galeria" class="section">
+        <div class="container">
+            <h2 class="section-title">Galería de Motos</h2>
+            <div class="gallery">
+                <img src="../taller_laboratorio1/assets/img/img2.jpg" alt="Moto 1">
+                <img src="../taller_laboratorio1/assets/img/img3.jpg" alt="Moto 2">
+                <img src="../taller_laboratorio1/assets/img/img4.jpg" alt="Moto 3">
+            </div>
+        </div>
     </section>
 
-    <footer id="footer">
-        <p>&copy; Diego Fernando Suarez De Leon</p>
+    <footer id="footer" class="footer">
+        <div class="container">
+            <p>&copy; 2024 Diego Fernando Suarez De Leon - Mundo de las Motos CRF</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>

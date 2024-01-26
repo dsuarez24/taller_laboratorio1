@@ -1,84 +1,76 @@
+/* Estilos Generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: rgb(0, 29, 19);
-    background-color: rgb(177, 248, 225);
+    background-color: #f2f2f2;
 }
 
-header {
-    background-color: #db4b23;
-    color: #fff;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section {
+    padding: 50px 0;
+}
+
+.section-title {
     text-align: center;
-    padding: 1em 0;
+    color: #333;
 }
 
-section {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-footer {
-    background-color: #db4b23;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-#moto-info img {
-    display: inline-block; /* Hace que la imagen se comporte como un bloque en línea */
-    max-width: 100%; /* Ajusta la imagen para que se ajuste al ancho máximo del contenedor */
-    height: auto; /* Mantén la proporción de la imagen */
-    width: 200px; /* Define un ancho específico para la imagen */
-    margin: 0 auto; /* Centra la imagen horizontalmente */
-    max-width: 100%; /* Ajusta la imagen para que se ajuste al ancho máximo del contenedor */
-    height: auto; /* Mantén la proporción de la imagen */
-    width: 200px; /* Define un ancho específico para la imagen */
-}
-#galeria {
-    text-align: center; /* Alinea las imágenes al centro */
-}
-
-#galeria img {
-    width: 200px; /* Establece un ancho fijo para todas las imágenes */
-    height: 150px; /* Establece una altura fija para todas las imágenes */
-    margin: 10px; /* Añade un margen entre las imágenes */
-}
-
-#menu {
+/* Estilos del Encabezado */
+.header {
     background-color: #333;
-    overflow: hidden;
+    color: #fff;
+    padding: 20px 0;
 }
 
-#menu ul {
+.logo {
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-}
-
-#menu li {
-    float: left;
-}
-
-#menu li a {
-    display: block;
-    color: white;
     text-align: center;
-    padding: 14px 16px;
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu ul li a {
     text-decoration: none;
+    color: #fff;
 }
 
-#menu li a:hover {
-    background-color: #111;
+.menu ul li a:hover {
+    color: #ccc;
 }
 
+/* Estilos de la Galería */
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.gallery img {
+    width: 300px;
+    height: auto;
+    margin: 10px;
+}
+
+/* Estilos del Pie de Página */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
