@@ -5,40 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../taller_laboratorio1/assets/style/estilo.css">
     <title>Mundo de las Motos</title>
+    <style>
+        /* Estilos para la barra de menú */
+        #menu {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        #menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        #menu li {
+            float: left;
+        }
+
+        #menu li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        #menu li a:hover {
+            background-color: #111;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Mundo de las Motos</h1>
+        <h1>Motos CRF</h1>
     </header>
+
+    <!-- Mueve el menú debajo del título -->
+    <div id="menu">
+        <ul>
+            <li><a href="#intro">Inicio</a></li>
+            <li><a href="#moto-info">Mi Moto Favorita</a></li>
+            <li><a href="#consejos">Consejos para Motociclistas</a></li>
+            <li><a href="#galeria">Galería de Motos</a></li>
+            <li><a href="#footer">Contacto</a></li>
+        </ul>
+    </div>
     
     <section id="intro">
-        <p>Bienvenido al fascinante mundo de las motocicletas. Aquí encontrarás información sobre diferentes modelos, consejos de mantenimiento y mucho más.</p>
+        <p>En el increíble mundo de las motos CRF, la emoción y la aventura se entrelazan en cada giro del camino. Desde las colinas escarpadas hasta los senderos polvorientos, estas máquinas emblemáticas desafían los límites de la exploración todoterreno.</p>
     </section>
 
     <section id="moto-info">
         <h2>Mi Moto Favorita</h2>
-        <img src="moto.jpg" alt="Imagen de una moto">
-        <p>Descripción emocionante de tu moto favorita y por qué te apasiona.</p>
+        <img src="../taller_laboratorio1/assets/img/img1.jpeg" alt="Imagen de una moto">
+        <p>Con su diseño robusto y su potencia inigualable, las CRF encarnan la pasión por la libertad y la adrenalina que solo los verdaderos aficionados comprenden. Cada rugido del motor es un llamado a la acción, una invitación a conquistar terrenos desconocidos y descubrir nuevos horizontes en el vasto universo de la aventura sobre dos ruedas</p>
     </section>
 
     <section id="consejos">
         <h2>Consejos para Motociclistas</h2>
         <ul>
-            <li>Consejo 1: Mantén tu moto en buen estado.</li>
-            <li>Consejo 2: Usa equipo de protección.</li>
-            <li>Consejo 3: Respeta las normas de tránsito.</li>
+            <li>Mantenimiento regular: Realiza un mantenimiento regular de tu motocicleta CRF. Revisa el aceite, los frenos, la cadena y otros componentes importantes para garantizar un funcionamiento óptimo y seguro.</li>
+            <li>Equipo de protección: Siempre usa equipo de protección adecuado cuando montes en tu CRF. Esto incluye casco, guantes, botas, chaqueta y pantalones resistentes.</li>
+            <li>Conocimiento del terreno: Antes de aventurarte en terrenos desconocidos, asegúrate de tener un buen conocimiento del terreno y las condiciones. Algunos terrenos pueden ser más difíciles de manejar y requerirán habilidades específicas de conducción.</li>
         </ul>
     </section>
 
     <section id="galeria">
         <h2>Galería de Motos</h2>
         <!-- Agrega imágenes de diferentes motos -->
-        <img src="moto1.jpg" alt="Moto 1">
-        <img src="moto2.jpg" alt="Moto 2">
-        <img src="moto3.jpg" alt="Moto 3">
+        <img src="../taller_laboratorio1/assets/img/img2.jpg" alt="Moto 1">
+        <img src="../taller_laboratorio1/assets/img/img3.jpg" alt="Moto 2">
+        <img src="../taller_laboratorio1/assets/img/img4.jpg" alt="Moto 3">
     </section>
 
-    <footer>
+    <footer id="footer">
         <p>&copy; 2024 Mundo de las Motos</p>
     </footer>
 

@@ -31,3 +31,50 @@ footer {
     bottom: 0;
     width: 100%;
 }
+#moto-info img {
+    display: inline-block; /* Hace que la imagen se comporte como un bloque en línea */
+    max-width: 100%; /* Ajusta la imagen para que se ajuste al ancho máximo del contenedor */
+    height: auto; /* Mantén la proporción de la imagen */
+    width: 200px; /* Define un ancho específico para la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    max-width: 100%; /* Ajusta la imagen para que se ajuste al ancho máximo del contenedor */
+    height: auto; /* Mantén la proporción de la imagen */
+    width: 200px; /* Define un ancho específico para la imagen */
+}
+#galeria {
+    text-align: center; /* Alinea las imágenes al centro */
+}
+
+#galeria img {
+    width: 200px; /* Establece un ancho fijo para todas las imágenes */
+    height: 150px; /* Establece una altura fija para todas las imágenes */
+    margin: 10px; /* Añade un margen entre las imágenes */
+}
+
+#menu {
+    background-color: #333;
+    overflow: hidden;
+}
+
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#menu li {
+    float: left;
+}
+
+#menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#menu li a:hover {
+    background-color: #111;
+}
