@@ -2,10 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    color: rgb(0, 29, 19);
+    background-color: rgb(177, 248, 225);
 }
 
 header {
-    background-color: #333;
+    background-color: #db4b23;
     color: #fff;
     text-align: center;
     padding: 1em 0;
@@ -23,7 +25,7 @@ img {
 }
 
 footer {
-    background-color: #333;
+    background-color: #db4b23;
     color: #fff;
     text-align: center;
     padding: 1em 0;
@@ -78,3 +80,5 @@ footer {
 #menu li a:hover {
     background-color: #111;
 }
+
+
