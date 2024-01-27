@@ -16,13 +16,35 @@
         }
 
         .carousel img {
-            width: 100%; /* Ajusta el tamaño de las imágenes al tamaño del contenedor */
+            width: 85%; /* Ajusta el tamaño de las imágenes al tamaño del contenedor */
+            height: 300px; /* Altura fija para todas las imágenes */
+            object-fit: cover; /* Para ajustar la imagen en caso de diferencias de relación de aspecto */
+        }
+
+        /* Estilo del rectángulo */
+        .rectangulo {
+            background-color: rgb(63, 63, 187); /* Cambia el color del rectángulo a azul */
+            height: calc(100vh - 450px); /* Calcula la altura del rectángulo para cubrir el resto de la página (ajustar según sea necesario) */
+            width: 100%; /* Ancho del rectángulo */
+            margin-top: 20px; /* Espacio superior para separarlo del carrusel */
+        }
+
+        /* Estilo del logo */
+        .logo {
+            position: absolute; /* Posición absoluta para poder posicionarlo correctamente */
+            top: 10px; /* Distancia desde la parte superior */
+            left: 10px; /* Distancia desde la izquierda */
+            width: 100px; /* Ancho del logo */
+            height: auto; /* Altura automática para mantener la proporción */
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Mi Página al Estilo de Harvard</h1>
+        <h1></h1>
+        <!-- Agregar la imagen del logo -->
+        <img src="../img/logo.png" alt="Logo de la empresa" class="logo">
+		<br>
         <nav>
             <ul>
                 <li><a href="#">Inicio</a></li>
@@ -33,16 +55,17 @@
     </header>
 
     <section>
-        <h2>Contenido Principal</h2>
-        <p>Bienvenido a mi página al estilo de Harvard. Aquí puedes colocar tu contenido principal.</p>
         
         <!-- Carrusel de imágenes -->
         <div class="carousel">
-            <div><img src="../img/kin1.jpg" alt="Imagen 1"></div>
+            <div><img src="../img/128120_7f3b9fbf981448809326f69585851cb9~mv2.webp" alt="Imagen 1"></div>
             <div><img src="../img/128120_7f3b9fbf981448809326f69585851cb9~mv2.webp" alt="Imagen 2"></div>
             <div><img src="../img/kinal.jpg" alt="Imagen 3"></div>
             <!-- Agrega más imágenes según sea necesario -->
         </div>
+
+        <!-- Rectángulo grande -->
+        <div class="rectangulo"></div>
     </section>
 
     <footer>
