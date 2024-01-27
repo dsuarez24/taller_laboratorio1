@@ -2,143 +2,98 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página al Estilo de Harvard</title>
+    <title>Mario Bros</title>
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../style/kinal.css">
-    <!-- Estilos del carrusel -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
-    <style>
-        /* Estilos del carrusel */
-        .carousel {
-            width: 80%; /* Ajusta el ancho del carrusel según sea necesario */
-            margin: auto; /* Centra el carrusel horizontalmente */
-        }
-
-        .carousel img {
-            width: 85%; /* Ajusta el tamaño de las imágenes al tamaño del contenedor */
-            height: 300px; /* Altura fija para todas las imágenes */
-            object-fit: cover; /* Para ajustar la imagen en caso de diferencias de relación de aspecto */
-        }
-
-        /* Estilo del rectángulo */
-        .rectangulo {
-            background-color: #1465bb; /* Cambia el color del rectángulo a morado */
-            height: calc(100vh - 450px); /* Calcula la altura del rectángulo para cubrir el resto de la página (ajustar según sea necesario) */
-            width: 100%; /* Ancho del rectángulo */
-            margin-top: 20px; /* Espacio superior para separarlo del carrusel */
-            display: flex; /* Para que los cuadros se distribuyan horizontalmente */
-            justify-content: space-around; /* Espacio entre los cuadros */
-            align-items: center; /* Centra los elementos verticalmente */
-            flex-direction: column; /* Organiza los elementos en columnas */
-        }
-
-        /* Estilo de los cuadros */
-        .cuadro {
-            width: 18%; /* Ancho de cada cuadro */
-            height: 150px; /* Altura de cada cuadro */
-            background-color: #ffcc80; /* Cambia el color de fondo de los cuadros a naranja suave */
-            text-align: center; /* Alineación del texto al centro */
-            padding: 10px; /* Espacio interno */
-            border-radius: 5px; /* Borde redondeado */
-            transition: background-color 0.3s; /* Animación de transición para el cambio de color de fondo */
-            margin-top: 10px; /* Espacio entre los cuadros */
-        }
-
-        /* Cambio de color al pasar el mouse por encima */
-        .cuadro:hover {
-            background-color: #ffa726; /* Cambia el color de fondo al pasar el mouse */
-        }
-
-        /* Estilo del fondo negro transparente */
-        body {
-            background-color: rgba(0, 0, 0, 0.5); /* Color de fondo negro transparente */
-            margin: 0; /* Elimina el margen predeterminado del body */
-        }
-
-        /* Estilo del título del rectángulo */
-        .titulo-rectangulo {
-            color: white; /* Color del texto */
-            margin-top: 20px; /* Espacio desde arriba */
-        }
-
-        /* Estilo del botón de login */
-        .boton-login {
-            background-color: red; /* Color de fondo rojo */
-            color: white; /* Color del texto */
-            padding: 10px 20px; /* Espacio interno */
-            border: none; /* Sin borde */
-            border-radius: 5px; /* Borde redondeado */
-            margin-top: 20px; /* Espacio desde arriba */
-            margin-right: 20px; /* Espacio desde la derecha */
-            cursor: pointer; /* Cambia el cursor al pasar por encima */
-        }
-    </style>
+    <link rel="stylesheet" href="../style/normalize.css">
 </head>
 <body>
-    <header>
-        <h1>kinal</h1>
-        <!-- Agregar la imagen del logo -->
-        <img src="../img/logo.png" alt="Logo de la empresa" class="logo">
-		<br>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Acerca de</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h2 class="nav__title">Kinal</h2>
+            </div>
+            <ul class ="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="index.html" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#sinopsis" class="nav__links">Sinopsis</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#criticas" class="nav__links">Criticas</a>
+                </li>
+
+                <img src="" alt="">
+            </ul>            
         </nav>
-        <button class="boton-login">Login</button> <!-- Botón de Login -->
+        <section class="hero__container container">
+            <h1 class="hero__title">Fundacion Kinal</h1>
+            <p class="hero__parapragh">academics</p>
+        </section>
     </header>
 
-    <section>
+    <main>
+        <section id="sinopsis"   class="knowledge">
+            <div class="knowledge__container container">
+                <div class="knowledge__texts">
+                    <h2 class="subtitle">Kinal </h2>
+                    <p class="knowledge__paragraph">Fundacion Kinal cuenta con centro educativo basico, centro educativo diversificado, escuela tecnica superior, carreras de tecnologia, academia virtual</p>
+                    <a href="https://kinal.academy/login/" class="cta">Login</a>
+                </div>
+                <figure class="knowledge__picture">
+                    <img src="../img/kinal.jpg" class="knowledge__img">
+                </figure>
+
+            </div>
+        </section>
+        <section id="criticas"  class="container about">
+            <h2 class="subtitle">Criticas</h2>
+            <p class="about_paragraph">
+            <div class="about__main">
+                <article class="about__icons">
+                    <img src="../img/128120_7f3b9fbf981448809326f69585851cb9~mv2.webp" class="about__icon">
+                    <h3 class="about__title">Publico</h3>
+                    <p clss="about__paragraph">95%</p>
+                    <p clss="about__paragraph"> El publico dice que es un colegio demasiado bueno y Especializado </p>
+                </article>
+                <article class="about__icons">
+                    <img src="../img/128120_7f3b9fbf981448809326f69585851cb9~mv2.webp" class="about__icon">
+                    <h3 class="about__title">Critica Especializada</h3>
+                    <p clss="about__paragraph">5%%</p>
+                    <p clss="about__paragraph">No hay criticas</p>
+                </article>
+            </div>
+        </section>
+        </section>
+
+             
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">Criticas</h2>
+                <ul class="nav__link nav__link--">
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#sinopsis" class="nav__links">Sinopsis</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#criticas" class="nav__links">Criticas</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
         
-        <!-- Carrusel de imágenes -->
-        <div class="carousel">
-            <div><img src="../img/128120_7f3b9fbf981448809326f69585851cb9~mv2.webp" alt="Imagen 1"></div>
-            <div><img src="../img/128120_7f3b9fbf981448809326f69585851cb9~mv2.webp" alt="Imagen 2"></div>
-            <div><img src="../img/kinal.jpg" alt="Imagen 3"></div>
-            <!-- Agrega más imágenes según sea necesario -->
-        </div>
 
-        <!-- Rectángulo grande -->
-        <div class="rectangulo">
-            <h2 class="titulo-rectangulo">Plataforma E-Learning</h2> <!-- Título del rectángulo morado -->
-            <!-- Cuadro 1 -->
-            <div class="cuadro">
-                <h3>Centro Educativo Basicos</h3>
-            </div>
-            <!-- Cuadro 2 -->
-            <div class="cuadro">
-                <h3>Centro Educativo Diversificado</h3>
-            </div>
-            <!-- Cuadro 3 -->
-            <div class="cuadro">
-                <h3>Escuela tecnica superior </h3>
-            </div>
-            <!-- Cuadro 4 -->
-            <div class="cuadro">
-                <h3>carreras de tecnologia</h3>
-            </div>
-            <!-- Cuadro 5 -->
-            <div class="cuadro">
-                <h3>academia virtual</h3>
-            </div>
-        </div>
-    </section>
-
-    <script src="scripts.js"></script>
-    <!-- Script del carrusel -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('.carousel').slick({
-                dots: true, // Muestra los puntos de navegación
-                autoplay: true, // Inicia el carrusel automáticamente
-                autoplaySpeed: 2000 // Velocidad de reproducción en milisegundos
-            });
-        });
-    </script>
+        <section class="footer__name container">
+            <h3 class="footer__namecreator">Fundacion Kinal</h3>
+        </section>
+    </footer>
 </body>
 </html>
